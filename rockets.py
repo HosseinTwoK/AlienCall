@@ -17,10 +17,6 @@ class PlayerRocket(Sprite):
         if self.rect.y <= 0:
             self.kill() # destroy self instance
         
-        
-            
-class AlienCyanRocket():
-    pass
 
 class AlienGreenRocket(Sprite):
     def __init__(self, x, y):
@@ -57,4 +53,5 @@ class AlienCyanRocket(Sprite):
             self.kill()
         
         
+
         

@@ -1,6 +1,5 @@
 import pygame
 from pygame.locals import *
-from random import choice,randint,random
 from os import path
 from random import randint,choice,choices
 from gamesounds import *
@@ -51,3 +50,4 @@ ALIEN_CYAN_VELOCITY_MAX = 8
 ALCYAN_COOLDOWN = 5000
 ALCYAN_ROCKET_COOLDOWN = 5000
 ALCYAN_GENCOUNT = 18 # must be multiple of 6 and 12
+

@@ -57,6 +57,7 @@ class Game():
         
         
     def won(self):
+        # Note Complete
         pos = (0,0)
         size = SC_SIZE
         
@@ -387,10 +388,11 @@ class Game():
         if self.game_over:
             soundGameOver.play()
             return self.over()
-        if self.player_score == 15000:
-            return self.won()
+#        if self.player_score == 15000:
+#            return self.won()
         if self.game_finished:
             return False
+
 
 
         return True

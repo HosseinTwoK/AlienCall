@@ -1,0 +1,53 @@
+import pygame
+from pygame.locals import *
+from random import choice,randint,random
+from os import path
+from random import randint,choice,choices
+from gamesounds import *
+
+SC_WIDTH = 800
+SC_HEIGHT = 600
+SC_SIZE = (SC_WIDTH,SC_HEIGHT)
+
+FPS = 60
+
+
+POS_CENTER = (SC_WIDTH//2, SC_HEIGHT//2)
+
+
+CLR_WHITE = (203,219,252)
+CLR_DBLUE = (7,0,72)
+CLR_DRED = (139,0,0)
+CLR_RED = pygame.Color("red")
+CLR_GREEN = pygame.Color("green")
+CLR_GREEN = pygame.Color("yellow")
+CLR_GOLD = (255,215,0)
+
+PLAYER_MAX_LIVES = 5
+PLAYER_VELOCITY = 8
+PLAYER_ROCKET_VELOCITY = 5
+PLAYER_ROCKET_COOLDOWN = 100
+PLAYER_SHIELD_DURATION = 370 # almost 7sec
+
+
+ALIEN_RED_SCORE = 20
+ALIEN_RED_VELOCITY = 2
+ALRED_COOLDOWN_MAX = 5000
+ALRED_COOLDOWN_MIN = 2000
+ALRED_SPAWN_XMIN = 200
+ALRED_SPAWN_XMAX = SC_WIDTH-100 # 24px + 16px from right to set bottomleft
+
+
+ALIEN_GREEN_SCORE = 10
+ALIEN_GREEN_VELOCITY = 20 # grid like
+ALGREEN_SIDE_STEPS = 8
+ALGREEN_FIRST_STEPS = 13
+ALGREEN_ROCKET_VELOCITY = 3
+ALGREEN_ROCKET_COOLDOWN = 4000
+
+ALIEN_CYAN_SCORE = 30
+ALIEN_CYAN_VELOCITY_MIN = 4
+ALIEN_CYAN_VELOCITY_MAX = 8
+ALCYAN_COOLDOWN = 5000
+ALCYAN_ROCKET_COOLDOWN = 5000
+ALCYAN_GENCOUNT = 18 # must be multiple of 6 and 12

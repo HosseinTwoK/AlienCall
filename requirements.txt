@@ -1,0 +1,2 @@
+Python 3.13.8
+pygame-ce 2.5.5
